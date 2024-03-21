@@ -1,0 +1,243 @@
+@font-face {
+    font-family: Beyonders;
+    src: url(/Beyonders.otf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(/Montserrat-SemiBold.otf);
+}
+@font-face {
+    font-family: MontserratItalic;
+    src: url(/Montserrat-SemiBoldItalic.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    /* background-color: rgb(45, 48, 39); */
+    background-color: black;
+}
+
+/* CSS for navigation Menu */
+#navbar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    opacity: .85;
+    z-index: -1;
+    background-color: rgb(45, 48, 39);
+}
+
+#navbar #logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1em;
+}
+
+@media(min-width:600px) {
+    #navbar ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        float: right;
+        flex-wrap: wrap;
+        margin-right: 55px;
+    }
+
+    #navbar li {
+        margin: 10px 10px;
+        float: right;
+        list-style: none;
+        padding: 3px;
+    }
+
+    #navbar li a {
+        text-decoration: none;
+        color: #959793;
+        font-family: Montserrat;
+        font-size: 1em;
+        padding: 1px;
+    }
+
+    #navbar a:hover {
+        border-bottom: 3px solid #e3d88f;
+        border-radius: 2px;
+        color: white;
+    }
+}
+
+#navbar #logo img {
+    width: 5em;
+    height: 5em;
+    margin: 4px .7em;
+}
+
+#logo .name h2 {
+    font-family: Beyonders;
+    font-size: .9em;
+    color: #e3d88f;
+}
+
+#logo .name h3 {
+    font-family: Montserrat;
+    font-size: .9em;
+    color: white;
+}
+.fake{
+    width: 100vw;
+    height: 1px;
+}
+.sec1 .backbg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    /* overflow: hidden; */
+    z-index: -1;
+}
+@media(max-width:905px){
+    .sec1 .backbg{
+        overflow: hidden;
+    }
+}
+.back-video{
+    object-fit: cover;
+    /* right: 0; */
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.sec1 video{
+    object-fit: fill;
+}
+ @media(min-aspect-ratio:16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio:16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+.sec1{
+    z-index: -5;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;
+    align-items: center; */
+    overflow: auto;
+    padding-bottom: 50px;
+}
+.sec1::before{
+    content: "";
+    position: absolute;
+    /* background:black; */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+}
+.sec1 .summary {
+    max-width: 800px;
+    padding-top: 12em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5.5em;
+    margin-right: 25px;
+}
+.sec1 .summary .header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.sec1 .summary .header div{
+    font-family: beyonders;
+    font-size: 1.5em;
+    color: white;
+    font-size: 1.8em;
+    text-align: justify;
+    padding-left: 3%;
+    
+}
+.sec1 .summary .content{
+    font-family: Montserrat;
+    color: white;
+    text-align: justify;
+    font-size: 18px;
+}
+.sec1 .summary .quote{
+    text-align: left;
+    font-family: MontserratItalic;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: #e3d88f;
+}
+.sec1 .summary .btns{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 40px;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+.sec1 .summary button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 25px;
+    border-radius: 5px;
+    box-shadow: 1.5px 1.5px 1px 2px black;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-weight: bold;
+    margin: 3px 0px;
+    /* margin-bottom: 20px; */
+}
+.sec1 .summary button i{
+    font-size: 23px;
+    margin-left: 6px;
+}
+button:hover{
+    background-color: #e3d88f;
+}
+
+@media(max-width:550px){
+    .sec1{
+        font-size: .7em;
+    }
+    /* .sec1 .summary .content{
+        font-size: .9em;
+    } */
+}

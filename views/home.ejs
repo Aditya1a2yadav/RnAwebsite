@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RNAsite</title>
+    <link rel="stylesheet" href="phone.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="wwd.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="events.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @media(min-width: 600px) {
+            .phone {
+                display: none;
+            }
+        }
+
+        @media(max-width: 599px) {
+            .non-phone {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="full-details" id="full-details-box">
+        <div class="detailmain">
+        </div>
+        <span onclick="closefulldetail()">x</span>
+    </div>
+    <div class="full-img" id="full-img-box" onclick="closefullimg()">
+        <img src="/Aviation1.png" id="full-img">
+        <span>x</span>
+    </div>
+    <div><%- include("includes/navbar.ejs") %></div>
+    <div id="fake"><%- include("includes/animebg.ejs") %></div>
+    <div class="sec1">
+        <div class="backbg">
+            <video src="/roborna.mp4" autoplay muted plays-inline class="back-video">
+            </video>
+        </div>
+        <div class="summary">
+            <div class="header">
+                <div>Welcome To
+                </div>
+                <div style="color: #e3d88f;">RnA</div>
+
+            </div>
+            <div class="content">
+                <p>The Robotics and Drone Aviation Club (RnA Club) of IIT Patna is a student - running organization
+                    dedicated to promoting the field of robotics and drone aviation. We aim to provide a platform for
+                    students to learn about, develop, and apply Robotics and Drone technology. We also organize various
+                    events and workshops to foster innovation and collaboration in this field. In the past few years,
+                    our members have won several awards at national and international competitions.</p>
+                <p class="quote">"Where robots take flight and dreams take off."</p>
+            </div>
+            <div class="btns">
+                <button class="tut">
+                    Tutorial <i class='bx bxl-youtube'></i>
+                </button>
+                <button class="idea">
+                    Submit Idea Here <i class='bx bx-archive-out'></i>
+                </button>
+            </div>
+        </div>
+        <div class="drone-anime">
+
+        </div>
+    </div>
+    <div id="wwd"> 
+        <%- include("includes/wwd.ejs") %>
+    </div>
+    <div>
+    <%- include("includes/sparna.ejs")%>
+</div>
+    <div id="evnt">
+        <%- include("includes/events.ejs") %>
+    </div>
+    <div id="gallery">
+        <%- include("includes/gallery.ejs") %>
+    </div>
+    <div>
+        <%- include("includes/footer.ejs") %>
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+    <link rel="stylesheet" href="events.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="full-img" id="full-img-box" onclick="closefullimg()">
+        <img src="Aviation1.png" id="full-img">
+        <span>x</span>
+    </div>
+    <div class="full-details" id="full-details-box">
+        <div class="detailmain">
+            <div class="card c1" style="--i:-1;">
+                <div class="content" style="--j:1;">
+                    <h2>RC Plane Workshops</h2>
+                    <p>
+                        quaerat blanditiis eius ullam ipsam. Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Odit animi asperiores eius voluptates eos in minus,
+                        voluptatibus
+                        magni excepturi? Delectus quas cum laudantium iusto itaque numquam vitae
+                        repellendus
+                        vero optio eum omnis accusantium minus et natus fuga voluptatum saepe
+                        inventore
+                        temporibus, ratione eos illo! Aperiam ipsa ullam hic aliquam maiores?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ut,
+                        esse a
+                        perspiciatis rerum maiores. Id numquam ratione assumenda expedita
+                        necessitatibus
+                        veniam! Dolor perspiciatis et quia nostrum soluta, pariatur iste cupiditate
+                        voluptatibus dignissimos dolore est nisi at praesentium iusto? Sunt
+                        voluptatum
+                        quaerat cumque tenetur, delectus vitae maiores eveniet minus itaque nam? Ad
+                        quam
+                        mollitia sequi, unde aut soluta incidunt sint cupiditate obcaecati dolor
+                        labore
+                        quos. Similique, voluptatum pariatur quis a, iusto optio ex beatae fuga
+                        architecto
+                        explicabo mollitia omnis non at dolor dignissimos, consectetur doloremque
+                        voluptate
+                        rem. Exercitationem maiores suscipit dicta fugit quidem blanditiis nemo
+                        dolores sunt
+                        velit? Explicabo, laborum.
+                    </p>
+                </div>
+            </div>
+            <div class="imges c1">
+                <h2 style="color:#fff">Gallery</h2>
+                <img src="/wg1.jpeg">
+                <img src="/wg2.png">
+                <img src="/wg3.jpg">
+                <img src="/wg3.jpg">
+                <img src="/wg3.jpg">
+                <img src="/wg3.jpg">
+            </div>
+        </div>
+        <span onclick="closefulldetail()">x</span>
+    </div>
+    <div class="events">
+        <div class="head">Events</div>
+        <div class="upcoming">
+            <div class="p1">UPCOMING</div>
+            <div class="p2">
+                <div style="font-size: 1em;">Workshops Title - Skills Used like OpenCV</div>
+                <div style="display: flex;width: 100%;">
+                    <div
+                        style="color: rgb(143, 143, 236); width: 50%;font-size: .7em;display: flex;align-items: center;">
+                        <i class='bx bxs-location-plus' style="font-size: 1.5em;"></i>Block 9,IIT Patna
+                    </div>
+                    <div
+                        style="color: rgb(242, 97, 97); width: 50%;font-size: .7em;display: flex;align-items: center;">
+                        <i class='bx bx-time' style="font-size: 1.5em;"></i>7:00pm, 19th Jan 2024
+                    </div>
+                </div>
+            </div>
+            <div class="p3"><img src="/wg3.jpg" onclick="returnidevent(this.src)"></div>
+        </div>
+        <div class="main">
+            <div class="event">
+                <div class="imge">
+                    <img src="/wg2.png" onclick="returnidevent(this.src)">
+                </div>
+                <div class="info" style="padding-left: 5px;">
+                    <div class="heading">Propellers'23</div>
+                    <div class="list">
+                        <ul>
+                            <li>Computer Vision</li>
+                            <li>Fun Quiz</li>
+                            <li>QnA Session</li>
+                            <li>Project Showcase</li>
+                        </ul>
+                    </div>
+                    <div class="date">
+                        <i class='bx bxs-calendar'></i>10th Sep,2023
+                    </div>
+                    <div class="details" id="details1" onclick="returniddetail(this.id)">
+                        Details
+                       <div id="eventDetails1" style="display: none;">
+                            <div class="detailmain">
+                                <div class="card c1" style="--i:-1;">
+                                    <div class="content" style="--j:1;">
+                                        <h2>RC Pane Workshops</h2>
+                                        <p>
+                                            quaerat blanditiis eius ullam ipsam. Lorem ipsum dolor sit, amet
+                                            consectetur
+                                            adipisicing elit. Odit animi asperiores eius voluptates eos in minus,
+                                            voluptatibus
+                                            magni excepturi? Delectus quas cum laudantium iusto itaque numquam vitae
+                                            repellendus
+                                            vero optio eum omnis accusantium minus et natus fuga voluptatum saepe
+                                            inventore
+                                            temporibus, ratione eos illo! Aperiam ipsa ullam hic aliquam maiores?
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+                                            ut,
+                                            esse a
+                                            perspiciatis rerum maiores. Id numquam ratione assumenda expedita
+                                            necessitatibus
+                                            veniam! Dolor perspiciatis et quia nostrum soluta, pariatur iste
+                                            cupiditate
+                                            voluptatibus dignissimos dolore est nisi at praesentium iusto? Sunt
+                                            voluptatum
+                                            quaerat cumque tenetur, delectus vitae maiores eveniet minus itaque nam?
+                                            Ad
+                                            quam
+                                            mollitia sequi, unde aut soluta incidunt sint cupiditate obcaecati dolor
+                                            labore
+                                            quos. Similique, voluptatum pariatur quis a, iusto optio ex beatae fuga
+                                            architecto
+                                            explicabo mollitia omnis non at dolor dignissimos, consectetur
+                                            doloremque
+                                            voluptate
+                                            rem. Exercitationem maiores suscipit dicta fugit quidem blanditiis nemo
+                                            dolores sunt
+                                            velit? Explicabo, laborum.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="imges c1">
+                                    <h2 style="color:#fff">gallery</h2>
+                                    <img src="/wg1.jpeg" onclick="returnidevent(this.src)">
+                                    <img src="/wg2.png" onclick="returnidevent(this.src)">
+                                    <img src="/wg3.jpg" onclick="returnidevent(this.src)">
+                                    <img src="/wg3.jpg" onclick="returnidevent(this.src)">
+                                    <img src="/wg3.jpg" onclick="returnidevent(this.src)">
+                                    <img src="/wg3.jpg" onclick="returnidevent(this.src)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="event">
+                <div class="imge">
+                    <img src="/wg2.png" onclick="returnidevent(this.src)">
+                </div>
+                <div class="info" style="padding-left: 5px;">
+                    <div class="heading">Propellers'23</div>
+                    <div class="list">
+                        <ul>
+                            <li>Computer Vision</li>
+                            <li>Fun Quiz</li>
+                            <li>QnA Session</li>
+                            <li>Project Showcase</li>
+                        </ul>
+                    </div>
+                    <div class="date">
+                        <i class='bx bxs-calendar'></i>10th Sep,2023
+                    </div>
+                    <div class="details" id="details2" onclick="returniddetail(this.id)">
+                        Details
+                    </div>
+                </div>
+            </div>
+            <div class="event">
+                <div class="imge">
+                    <img src="/wg2.png" onclick="returnidevent(this.src)">
+                </div>
+                <div class="info" style="padding-left: 5px;">
+                    <div class="heading">Propellers'23</div>
+                    <div class="list">
+                        <ul>
+                            <li>Computer Vision</li>
+                            <li>Fun Quiz</li>
+                            <li>QnA Session</li>
+                            <li>Project Showcase</li>
+                        </ul>
+                    </div>
+                    <div class="date">
+                        <i class='bx bxs-calendar'></i>10th Sep,2023
+                    </div>
+                    <div class="details" id="details3" onclick="returniddetail(this.id)">
+                        Details
+                    </div>
+                </div>
+            </div>
+            <div class="event">
+                <div class="imge">
+                    <img src="wg2.png" onclick="returnidevent(this.src)">
+                </div>
+                <div class="info" style="padding-left: 5px;">
+                    <div class="heading">Propellers'23</div>
+                    <div class="list">
+                        <ul>
+                            <li>Computer Vision</li>
+                            <li>Fun Quiz</li>
+                            <li>QnA Session</li>
+                            <li>Project Showcase</li>
+                        </ul>
+                    </div>
+                    <div class="date">
+                        <i class='bx bxs-calendar'></i>10th Sep,2023
+                    </div>
+                    <div class="details" id="details4" onclick="returniddetail(this.id)">
+                        Details
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var fulldetailbox = document.getElementById("full-details-box");
+        var displaydetail = fulldetailbox.getElementsByTagName("div")[0];
+        function closefulldetail() {
+            fulldetailbox.style.display = "none";
+
+        }
+        function returnddetail(id) {
+            console.log(id);
+            var myDiv = document.getElementById(id);
+            var subdiv = myDiv.getElementsByTagName("div")[0];
+            var ssubdiv = subdiv.getElementsByTagName("div")[0];
+            var html = ssubdiv.innerHTML;
+            displaydetail.innerHTML = html;
+            fulldetailbox.style.display = "flex";
+        }
+        var fullimgbox = document.getElementById("full-img-box");
+        var fullimg = document.getElementById("full-img");
+        function returnidevent(pic) {
+            fullimgbox.style.display = "flex";
+            fullimg.src = pic;
+        }
+        function closefullimg() {
+            fullimgbox.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

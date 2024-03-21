@@ -1,0 +1,190 @@
+@font-face {
+    font-family: Beyonders;
+    src: url(/Beyonders.otf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(/Montserrat-SemiBold.otf);
+}
+@font-face {
+    font-family: MontserratItalic;
+    src: url(/Montserrat-SemiBoldItalic.otf);
+}
+
+
+*{
+    
+    box-sizing: border-box;
+    margin: 0 ;
+    text-align: center;
+    font-family: Montserrat;
+    
+}
+
+.subteam{
+    width: 100%;
+    margin-top: 18px;
+    margin-bottom: 25px;
+    height: 2.7px;
+    display: flex;
+    position: relative;
+    /* background: linear-gradient(to right, transparent, #171c1c, #527853, #171c1c, transparent); */
+    justify-content: center;
+    align-items: center;
+}
+.subteam::before{
+    content: "";
+    position: absolute;
+    min-width: 90%;
+    width: 60vw;
+    height: 2.7px;
+    background: linear-gradient(to right, transparent, #527853, #171c1c, #527853, transparent);
+    z-index: -2;
+}
+.subteam img{
+    width: 30px;
+    height: 30px;
+}
+h2{
+    color: green;
+}
+.build{
+    
+    font-size: 2.5rem;
+    color: rgb(45, 48, 39);
+}
+.build span {
+    padding: 0 ;
+}
+
+/* ---------------------------------------- */
+
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.container{
+    width: 230px;
+    height: 260px;
+    padding: 0 ;
+    margin: 18px;
+    perspective: 700px;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0; 
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2); 
+    border-radius: 8px;
+    padding: 0;
+    transition: transform 1500ms;
+    
+    transform-style: preserve-3d;
+}
+
+.front , .back{
+    position: absolute;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    backface-visibility: hidden ;
+}
+.front{
+    padding:0;
+    color: rgb(45, 48, 39);
+    background-color: #FFF5C2;
+    
+}
+.back{
+    background-color: rgb(45, 48, 39);
+    color: white;
+    transform: rotateY(180deg);
+    padding: 20px;
+}
+.back p {
+    text-align: justify;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.front p {
+    padding :0;
+}
+.back h3 {
+    padding:0
+}
+
+h3 span{
+    padding:0;
+}
+
+.dot{
+    height: 18px ;
+    width: 18px;
+    padding: 0;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: block;
+    background-color:#e3d88f;
+}
+
+
+.container:hover > .card{
+    transform: rotateY(180deg);
+}
+
+.name{
+    margin-top: 7px;
+    font-size: large;
+    
+}
+.front img{
+    width: 100%;
+    border-radius: 10px 10px 0 0 ;
+    height: auto;  /*Change krna hai isko*/
+    margin: 0;
+    padding: 0;  
+}
+.card-content{
+    padding: 0px;
+}
+
+
+
+.linkedin{
+    position: absolute;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    bottom: 13px;
+    left: 31%;
+}
+
+.linkedin img{
+    width: 22px;
+    padding: 0;
+}
+.linkedin a{
+    text-decoration: none;
+    color: #e3d88f;
+    padding: 0px;
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+    padding-left: 2px;
+    font-size: 20px;
+    text-align: center;
+    transition: .3s;
+}
+.linkedin a:hover{
+    font-size: 25px;
+}
+
+
+

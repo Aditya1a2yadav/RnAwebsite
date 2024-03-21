@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPARNA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* body{
+            background-color: red;
+        } */
+
+        /* .sparna-container {
+            background-color: red;
+            margin-top: 0;
+            padding-top: 10px;
+            width: 3000px;
+            overflow-x: hidden;
+            z-index: -20;
+        } */
+
+        #sparna {
+            position:relative;
+            width: 100vw;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10px;
+            margin-bottom: 0px;
+            /* margin-top: 10px; */
+            z-index: -2;
+            background-color: red;
+        }
+        
+        .note {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            /* background-color: red; */
+            color: aliceblue;
+        }
+
+        .sparna {
+            background-color: black;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            width: 70%;
+            max-width: 1000px;
+            height: 200px;
+        }
+
+        .sparna .spa {
+            width: 50%;
+            height: 100%;
+            border: 2px solid black;
+        }
+
+        .sparna .rna {
+            width: 50%;
+            height: 100%;
+            border: 2px solid black;
+        }
+
+        .sparna img {
+            /* height: 200px; */
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+
+        @media(max-width:786px) {
+            .sparna {
+                /* width: 800px; */
+                transform: scalex(1.2);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="sparna-container"> -->
+        <div id="sparna">
+            <div class="sparna">
+                <div class="spa">
+                    <img src="/events/SPAfinal.png" alt="SPA">
+                </div>
+                <div class="rna">
+                    <img src="/events/RNA3final.png" alt="RNA">
+                </div>
+            </div>
+            <footer class="note">
+                <p>SPARNA is live</p>
+            </footer>
+        </div>
+    <!-- </div> -->
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <div class="full-img" id="full-img-box" onclick="closefullimg()">
+        <img src="Aviation1.png" id="full-img">
+        <span>x</span>
+    </div>
+    <div class="gallerys">
+        <div class="main-gallery">
+            <div class="header">&lt;/Gallery&gt;</div>
+            <!-- <div style="background: url(stuffs/woodbg.jpg); padding: 10px;border-radius: 10px;"> -->
+                <div class="head-gallery">
+                    <div id="headpic1" onclick="returnid(this.id)">
+                        <img src="/pic1.jpg" alt="pic1" class="photo" id="">
+                        <h2>RC PLANE F22 RAPTOR</h2>
+                        <h3>15th October,2023</h3>
+                    </div>
+                    <div id="headpic2" onclick="returnid(this.id)">
+                        <img src="/pic2.jpeg" alt="pic2" class="photo">
+                        <h2>RC PLANE F22 RAPTOR</h2>
+                        <h3>15th October,2023</h3>
+                    </div>
+                    <div id="headpic3" onclick="returnid(this.id)">
+                        <img src="/pic2.jpeg" alt="pic2" class="photo">
+                        <h2>RC PLANE F22 RAPTOR</h2>
+                        <h3>15th October,2023</h3>
+                    </div>
+                    <div id="headpic4" onclick="returnid(this.id)">
+                        <img src="/pic2.jpeg" alt="pic2" class="photo">
+                        <h2>RC PLANE F22 RAPTOR</h2>
+                        <h3>15th October,2023</h3>
+                    </div>
+                    <div id="headpic5" onclick="returnid(this.id)">
+                        <img src="/pic2.jpeg" alt="pic2" class="photo">
+                        <h2>RC PLANE F22 RAPTOR</h2>
+                        <h3>15th October,2023</h3>
+                    </div>
+                    <div id="headpic6" onclick="returnid(this.id)">
+                        <img src="/pic2.jpeg" alt="pic2" class="photo">
+                        <h2>RC PLANE F22 RAPTOR</h2>
+                        <h3>15th October,2023</h3>
+                    </div>
+                </div>
+            <!-- </div> -->
+            <div class="grid-wraper">
+                <div id="mypic1" class="tall" onclick="returnid(this.id)">
+                    <img src="/Aviation1.png">
+                </div>
+                <div id="mypic2" onclick="returnid(this.id)">
+                    <img src="/pic2.jpeg">
+                </div>
+                <div id="mypic3" class="wide" onclick="returnid(this.id)">
+                    <img src="/pic2.jpeg">
+                </div>
+                <div id="mypic4" class="big" onclick="returnid(this.id)">
+                    <img src="/pic2.jpeg">
+                </div>
+                <div id="mypic5" class="tall" onclick="returnid(this.id)">
+                    <img src="/pic2.jpeg">
+                </div>
+                <div id="mypic6" onclick="returnid(this.id)">
+                    <img src="/Knox_Knocked.png">
+                </div>
+                <div id="mypic7" onclick="returnid(this.id)">
+                    <img src="/robot2.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var fullimgbox = document.getElementById("full-img-box");
+        var fullimg = document.getElementById("full-img");
+        function returnid(id) {
+            var myDiv = document.getElementById(id);
+            var myImg = myDiv.getElementsByTagName("img")[0];
+            var mySrc = myImg.src;
+            fullimgbox.style.display = "flex";
+            fullimg.src = mySrc;
+        }
+        function closefullimg() {
+            fullimgbox.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

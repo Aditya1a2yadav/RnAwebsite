@@ -1,0 +1,78 @@
+@media(max-width: 599px) {
+    body{
+        background-color: rgb(45, 48, 39);
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #option{
+        /* margin-top: 50px; */
+        border-top: 90px solid rgb(45, 48, 39);
+    }
+    #option .btn_menu i{
+        position: fixed;
+        color: rgb(250, 249, 249);
+        font-size: 30px;
+        cursor: pointer;
+        border-radius: 6px;
+        background: rgba(45, 48, 39,.5);
+        box-shadow: 0 0 6px rgba(225,225,225,0.5);
+        transition: all .1s linear;
+        opacity: 1;
+        margin: 3px;
+    }
+    #option .btn_menu i:hover{
+        font-size: 35px;
+    }
+    #option .btn_menu_close i{
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        border-radius: 6px;
+        background-color: rgba(45, 48, 39,.5);
+    }
+    #option .btn_menu_close{
+        float: right;
+        position: sticky;
+        
+    }
+    #check{
+        display: none;
+    }
+    #option .menu{
+        position: fixed;
+        height: 100vh;
+        background: rgba(225,225,225,0.2);
+        box-shadow: 0 0 2px rgba(225,225,225,0.5);
+        left: -200px;
+        transition: all .3s linear;
+        border-top-right-radius: 5px;
+    }
+    #option ul{
+        margin-top: 40px;
+    }
+    #option ul li{
+        list-style: none;
+        padding: 10px 20px;
+        padding-right: 80px;
+        width: 100%;
+        transition: all .2s linear;
+    }
+    #option ul a{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+    }
+    #option ul li:hover{
+        border-left: 1px solid #fff;
+        box-shadow: 0 0 4px rgba(225,225,225,0.5);
+    }
+    #check:checked~ .btn_menu{
+        display: none;
+    }
+    #check:checked~ .menu{
+        left: 0px;
+    }
+}

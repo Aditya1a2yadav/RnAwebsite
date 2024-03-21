@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;300;400;500;600&family=Open+Sans:ital,wght@0,400;1,300&family=Roboto:wght@400;500;700;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 1s;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../stuffs/Montserrat-SemiBold.otf);
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+  background-color:black;
+    
+}
+.navbar
+{
+    width:100vw;
+    height:30vh;
+    position:sticky;
+    background-color: #000000;
+    top:0;
+    opacity: 0.95;
+    z-index: 1;
+
+}
+.submissions
+{
+    display: flex;
+   
+    flex-direction: row;
+  
+}
+.gallery{
+background-color: black;
+width:50vw;
+height:25vh;
+display: flex;
+flex-wrap: wrap;
+margin: 1rem 2rem 1rem 2rem;
+padding: 20px 0px 0px 20px;
+flex-direction: row;
+}
+.gallerycard
+{
+ 
+ border:2px;
+ height:3.5rem;
+ width:14rem;
+border-radius: 2.5px;
+margin-right: 1.0rem;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+background-color: rgb(40, 52, 20);
+font-size: 18px;
+font-family: 'Montserrat', sans-serif ;
+}
+.gallerycard:hover
+{
+    cursor:pointer;
+    background-color: #3b4037;
+   
+}
+.gallerycard i{
+    margin-left: 1rem;
+    color: beige;
+    font-size: 20px;
+}
+
+.firstline
+{
+    color:rgb(255, 255, 255);
+    font-weight: 600;
+ 
+}
+.secondline
+{
+    color:#e3d88f;
+    font-weight: 600;
+}
+.submitIdea
+{
+    background-color:  black;
+    width:20vw;
+    height:20vh;
+    margin: 1rem 2rem;
+    display:flex;
+ 
+    flex-direction: column;
+}
+
+.submitcard
+{
+    background-color:rgb(255, 255, 255) ;
+    color:black;
+    border-radius: 2.5px;
+    width:250px;
+    height:50px;
+    padding:10px 20px;
+    margin:1rem 1rem 0rem 1rem;
+    font-family: Montserrat;
+    display: flex;
+    align-items: center;
+}
+.submitcard a{
+    text-decoration: none;
+    font-size: 18px;
+    color:black;
+    font-weight: 600;
+}
+.submitcard i{
+    font-size:25px;
+    margin-left: .5rem;
+}
+.Tutorials
+{
+    background-color: rgb(0, 0, 0);
+    width:15vw;
+    height:15vh;
+    margin: 1rem 2rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tutorialcard
+{
+    background-color:rgb(255, 255, 255) ;
+    color:black;
+    border-radius: 2.5px;
+    width:160px;
+    height:50px;
+    padding:10px 20px;
+    margin:1rem 1rem 0rem 1rem;
+    font-family: Montserrat;
+    display: flex;
+align-items: center;
+    
+}
+.tutorialcard a{
+    text-decoration: none;
+    font-size: 18px;
+    color:black;
+    font-weight: 600;
+}
+.tutorialcard i{
+    font-size:30px;
+    margin-left: .5rem;
+}
+
+/*project demonstration page*/
+.project
+{
+    
+    scroll-behavior: smooth;
+    z-index:-1;
+}
+.project-container
+{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+justify-content:space-around;
+align-items: center;
+}
+
+.projectcard
+{
+   
+    width:25rem;
+    height:15rem;
+    background-color: rgb(255, 255, 255);
+   margin:5rem 2rem 0rem 2rem;
+   border-radius:2.5px;
+}
+.content img{
+    background-size: cover;
+    width:9.5rem;
+    height:9.5rem;
+    border-color:15px  black;
+    margin: 1rem 1rem;
+
+}
+.content{
+    display: flex;
+    flex-direction:row;
+    margin:1rem 0rem;
+}
+.img-content{
+    margin-top: 1rem;
+ 
+}
+
+.img-content p{
+    font-family: 'Montserrat', sans-serif;  
+    font-size:1.25rem; 
+    font-weight:600;
+}
+.img-content ul
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 23px;
+    margin-top: 1.3rem;
+    margin-left:30px;
+}
+.calendar
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+margin-top: 1rem;
+margin-left:0.7rem;
+}
+.calendar i
+{
+font-size:15px;
+margin-right:5px;
+color:rgb(255, 49, 34);
+}
+.calendar p{
+    font-size:15px;
+}
+.hamburger,.hide
+{
+    display:none;
+}
+@media (max-width:1100px) {
+.secondline
+{
+    display: none;
+}
+}
+@media (max-width:799px) {
+    .navbar
+    {
+        width:100vw;
+        height:10vh;
+        position:sticky;
+        background-color: #000000;
+        top:0;
+        opacity: 0.95;
+        z-index: 1;
+        
+    }
+    .secondline
+    {
+        opacity: 0;
+    }
+    .gallery{
+       display: none;    
+    }
+    .gallerycard
+{
+    display: none;
+}
+
+
+    .submitIdea
+    {
+        display: none;
+    }
+    .Tutorials
+    {
+        display: none;
+    }
+    .submitIdea
+{
+  display:none;
+}
+
+.submitcard
+{
+    display: none;
+}
+    .hamburger
+    {
+        color:rgb(255, 255, 255);
+        font-size:30px;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+       
+    }
+    .hamburger img {
+     height:60px;
+      width:60px;
+      position: absolute;
+    top: 10%;
+    left: 5%;
+    }
+    .hamburger i {
+      position:absolute;
+     right:5%;
+     top:20%;
+     
+    }
+    .hamburger i:hover{
+        cursor:pointer;
+    }
+    .hide
+    {
+        display:flex;
+        flex-direction: column;
+        background-color: #000000;
+        width:13rem;
+        height:70vh;
+        flex-wrap: wrap;
+        position:fixed;
+        top:0;
+        right:0; 
+        z-index: 1;  
+        transition: all 0.3s width;
+        border-bottom-left-radius:2.5px;
+        box-shadow:0 0  #3b4037;
+    }
+    .cross
+    {
+        color:white;
+        position:absolute;
+        top:2%;
+        left:5%;
+        padding:10px 10px;
+    }
+    .cross:hover
+    {
+        cursor:pointer;
+        background-color: rgba(103, 105, 102, 0.385);
+        border-radius:10%;
+    }
+    #logo img
+    {
+    display: none;
+    }
+ 
+.v-class
+{
+    visibility: hidden;
+    
+}
+.gallery-resp{
+        padding:10px 10px 10px 40px;
+        margin-top: 50px;
+    }
+    .gallerycard-resp
+    {
+        border:2px;
+        height: 3rem;
+        width: 9rem;
+       border-radius: 2.5px;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: center;
+       background-color: rgb(40, 52, 20);
+       opacity: 0.4;
+       color:blanchedalmond;
+       
+       margin-bottom:40px;
+       font-weight: 800;
+       }   
+.gallerycard-resp i{
+    margin-left: 0.5rem;
+    color: beige;
+    font-size: 15px;
+}
+
+.projectcard {
+    width: 18rem;
+    height: 14rem;
+    background-color: rgb(255, 255, 255);
+    margin: 5rem 2rem 0rem 2rem;
+    border-radius: 2.5px;
+  }
+.content img {
+    background-size: cover;
+    width: 7.5rem;
+    height: 7.5rem;
+    border-color: 15px black;
+    margin: 1rem 1rem;
+  }
+
+.img-content ul {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 20px;
+  margin-top: 0.5rem;
+  margin-left: 10px;
+}
+.img-content p{
+    font-family: 'Montserrat', sans-serif;  
+    font-size:0.75rem; 
+    font-weight:700;
+}
+.calendar
+{
+
+margin-left:0.3rem;
+}}
+
+@media (max-width:1485px) and (min-width:1290px){
+    .navbar{
+        height:25vh;
+    }
+    .gallery{
+        height:19vh;
+
+    }
+.gallerycard
+{
+ height:3.5rem;
+ width:12rem;
+ margin-right: 1rem;
+ font-size:15px;
+ font-family: 'Montserrat', sans-serif ;
+ 
+}
+.submitIdea
+{
+    width: 17vw;
+  height: 19vh;
+  margin:1rem 2rem;
+}
+.submitcard
+{
+    width:188px;
+    padding:10px 5px;
+
+}
+.submitcard a {
+   font-size: 15px; 
+}
+.submitcard i {
+    font-size:20px;
+}
+.Tutorials
+{
+    height:19vh;
+    margin:1rem 2rem;
+}
+.tutorialcard
+{
+    width:150px;
+    padding:10px 30px;
+}
+.tutorialcard a
+{
+    font-size: 16px;
+}
+.tutorialcard i {
+font-size: 25px;
+};
+}
+@media (min-width:1105px)  and (max-width:1289px){
+
+    .navbar
+    {
+        height:25vh;
+    }
+    .gallery{
+        width:60%;
+        height:15vh;
+    }
+    .gallerycard{
+        height:4.3vh;
+        width:13vw;
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif ;
+    }
+    .gallerycard i {
+margin-left: 0.5rem;
+    };
+    .Tutorials
+{
+    background-color: black;
+    width:20%;
+    height:15vh;
+    margin: 2rem 2rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tutorialcard
+{
+    width: 144px;
+  height: 45px;
+}
+.tutorialcard a{
+font-size:16px;
+}
+.tutorialcard i
+{
+font-size:25px;
+}
+.submitIdea
+{
+    height:15vh;
+    margin:1rem 2rem;
+}
+.submitcard
+{
+    width: 17vw;
+    height: 46px;
+    padding:10px 10px;
+    justify-content: space-around;
+   
+}
+.submitcard a{
+    font-size: 15.5px;
+}
+.submitcard i {
+    font-size: 16px;
+    margin-left: 0.2rem;
+  }
+  .Tutorials
+  {
+    margin: 1rem 2rem;
+    height:15vh;
+  } 
+}
+@media (min-width:800px)  and (max-width:1104px){
+    .navbar{
+        height:10vh;
+    }
+    .submissions{
+        display: none;
+    }
+    .gallery,.submitIdea,.Tutorials
+    {
+        display: none;
+    }
+    .hide
+    {
+       
+        display:flex;
+        flex-direction: row;
+        position: absolute;
+        top: 15%;
+        width: 100vw;
+        align-items: center;  
+    }
+    .gallery-resp
+    {
+        display: flex;
+        flex-direction: row;
+        width:100vw;
+        justify-content: space-around;
+    }
+    .gallerycard-resp
+    {
+        border:2px;
+        height:3rem;
+        width:8rem;
+       border-radius: 2.5px;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: center;
+       background-color: rgb(40, 52, 20);
+       opacity: 0.4;
+       color:blanchedalmond;
+       font-weight: 800;
+       font-family: 'Montserrat', sans-serif ;
+       }
+       .gallerycard-resp i
+       {
+        margin-left:5px;
+       }
+       #logo
+       {
+        margin-left:12px;
+       }
+       #logo img
+       {
+        width:60px;
+        height:60px;
+        background-size: cover;
+       }
+       .cross{
+        opacity: 0;
+       }
+
+}    
+    

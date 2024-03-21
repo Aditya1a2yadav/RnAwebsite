@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+    <link rel="stylesheet" href="/team.css">
+</head>
+<body>
+    <br>
+    <br>
+    <p class="build">We <font color="#527853;">Build</font> Together <font color="#527853;">!</font></p>
+    <div class="subteam">
+        <img src="\team\wheel.png" alt="">
+    </div>
+    <p class="small-description">Robotics And Aviation Club was founded in year 20XX, shared a glorious
+        journey and markable struggles. After constant efforts dedication of students,
+        the club took rebirth in year 2023 and is ready to take it's flight to newer heights.
+    </p>
+    <br><br>
+    <h2>&lt;/<font color="black">Our Visionaries</font>&gt; </h2>
+
+    <div class="visionaries">
+        <div class="card-container">
+            <% for(let member of teamdata.visionary){ %>
+                <div class="container">
+                    <div class="card">
+                        <div class="front">
+                            <img src="<%= member.image %>" alt="Member ">
+                            <p class="name">
+                                <%= member.name %>
+                            </p>
+                            <p class="des">
+                                <%= member.desc %>
+                            </p>
+                        </div>
+                        <div class="back">
+                            <span class="dot"></span>
+                            <h3><%= member.backName %></h3>
+                            <p>
+                                <%= member.notion %>
+                            </p>
+                            <div class="linkedin">
+                                <a href="<%= member.linkedIn %>" target="_blank">Linked</a>
+                                <img src="/linkedin3d.png" alt="Linked">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+        </div>
+    </div>
+
+    <br><br>
+    <!-- ------------------------------------------------------------------------------- -->
+    <h2>&lt;/<font color="black"> Our Coordinators</font>&gt;</h2>
+    <div class="coordinators">
+        <div class="card-container">
+            <% for(let member of teamdata.coordinators){ %>
+                <div class="container">
+                    <div class="card">
+                        <div class="front">
+                            <img src="<%= member.image %>" alt="Member ">
+                            <p class="name">
+                                <%= member.name %>
+                            </p>
+                            <p class="des">
+                                <%= member.desc %>
+                            </p>
+                        </div>
+                        <div class="back">
+                            <span class="dot"></span>
+                            <h3>
+                                <%= member.backName %>
+                            </h3>
+                            <p>
+                                <%= member.notion %>
+                            </p>
+
+                            <div class="linkedin">
+                                <a href="<%= member.linkedIn %>" target="_blank">Linked</a>
+                                <img src="/linkedin3d.png" alt="Linked">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+
+        </div>
+
+    </div>
+
+    <br><br>
+    <h2>&lt;/<font color="black"> Core Team</font>&gt; </h2>
+    <div class="core-team">
+        <div class="card-container">
+            <% for(let member of teamdata.sub_coordinators) {%>
+                <div class="container">
+                    <div class="card">
+                        <div class="front">
+                            <img src="<%= member.image %>" alt="Member ">
+                            <p class="name">
+                                <%= member.name %>
+                            </p>
+                            <p class="des">
+                                <%= member.desc %>
+                            </p>
+                        </div>
+                        <div class="back">
+                            <span class="dot"></span>
+                            <h3>
+                                <%= member.backName %>
+                            </h3>
+                            <p>
+                                <%= member.notion %>
+                            </p>
+
+                            <div class="linkedin">
+                                <a href="<%= member.linkedIn %>" target="_blank">Linked</a>
+                                <img src="/linkedin3d.png" alt="Linked">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+        </div>
+    </div>
+    <div>
+        <%- include("includes/footer.ejs") %>
+    </div>
+</body>
+
+</html>

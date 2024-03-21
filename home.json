@@ -1,0 +1,158 @@
+{
+    "wwd":{
+        "vdogrind":"wwd/bgvdo.mp4",
+        "vdoplay":"wwd/bgvdo.mp4",
+        "vdoshowoff":"wwd/bgvdo.mp4",
+        "BgGrind":"wwd/wg1.jpeg",
+        "BgPlay":"wwd/wg2.png",
+        "BgShowoff":"wg3.jpg"
+    },
+    "upcoming_events":{
+        "upcoming":"UPCOMING",
+        "title":"Workshops Title - Skills Used like OpenCV",
+        "image":"/events/wg3.jpg",
+        "location":"Block 9,IIT Patna",
+        "timeandDate":"7:00pm, 19th Jan 2024"
+    },
+    "events": [
+        {
+            "frontImage": "/events/wg2.png",
+            "heading": "Propellers'23",
+            "list": [
+                {
+                    "name": "Computer Vision"
+                },
+                {
+                    "name": "Fun Quiz"
+                },
+                {
+                    "name": "QnA Session"
+                },
+                {
+                    "name": "Project Showcase"
+                }
+            ],
+            "date": "10th Sep,2023",
+            "details": {
+                "id": "details1",
+                "detailHeading": "RC Pane Workshops",
+                "content": "Lorem, ipsum dolor \n sit amet consectetur adipisicing elit. Tempore \nrepellat libero quod enim fuga voluptatibus mollitia ab, repellendus quis accusantium non voluptates voluptatum magnam? Perspiciatis nostrum tempora laborum quos consequatur, tempore distinctio, soluta itaque aspernatur ipsam rem laboriosam neque suscipit facere voluptatem dolorem hic dicta! Quisquam ut rem incidunt quaerat.",
+                "detailsimg": [
+                    {
+                        "image": "/events/detail/wg1.jpeg"
+                    },
+                    {
+                        "image": "/events/detail/wg2.png"
+                    },
+                    {
+                        "image": "/events/detail/wg3.jpg"
+                    },
+                    {
+                        "image": "/events/detail/wg3.jpg"
+                    },
+                    {
+                        "image": "/events/detail/wg3.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "frontImage": "/events/wg2.png",
+            "heading": "Propellers'23",
+            "list": [
+                {
+                    "name": "Computer Vision"
+                },
+                {
+                    "name": "Fun Quiz"
+                },
+                {
+                    "name": "QnA Session"
+                },
+                {
+                    "name": "Project Showcase"
+                }
+            ],
+            "date": "10th Sep,2023",
+            "details": {
+                "id": "details1",
+                "detailHeading": "RC Pane Workshops",
+                "content": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore repellat libero quod enim fuga voluptatibus mollitia ab, repellendus quis accusantium non voluptates voluptatum magnam? Perspiciatis nostrum tempora laborum quos consequatur, tempore distinctio, soluta itaque aspernatur ipsam rem laboriosam neque suscipit facere voluptatem dolorem hic dicta! Quisquam ut rem incidunt quaerat.",
+                "detailsimg": [
+                    {
+                        "image": "/events/detail/wg1.jpeg"
+                    },
+                    {
+                        "image": "/events/detail/wg2.png"
+                    },
+                    {
+                        "image": "/events/detail/wg3.jpg"
+                    },
+                    {
+                        "image": "/events/detail/wg3.jpg"
+                    },
+                    {
+                        "image": "/events/detail/wg3.jpg"
+                    }
+                ]
+            }
+        }
+    ],
+    "gallery": {
+        "head_gallery": [
+            {
+                "image": "/gallery/headgallery/pic1.jpg",
+                "id": "headpic1",
+                "heading": "RC PLANE F22 RAPTOR",
+                "Date": "15th October,2023",
+                "alt": "RC PLANE F22 RAPTOR"
+            },
+            {
+                "image": "/gallery/headgallery/pic1.jpg",
+                "id": "headpic2",
+                "heading": "RC PLANE F22 RAPTOR",
+                "Date": "15th October,2023",
+                "alt": "RC PLANE F22 RAPTOR"
+            },
+            {
+                "image": "/gallery/headgallery/pic1.jpg",
+                "id": "headpic2",
+                "heading": "RC PLANE F22 RAPTOR",
+                "Date": "15th October,2023",
+                "alt": "RC PLANE F22 RAPTOR"
+            }
+        ],
+        "grid_wrapper": [
+            {
+                "image": "/gallery/maingallery/Aviation1.png",
+                "size": "tall",
+                "idm": "grid_pic1"
+            },
+            {
+                "image": "/gallery/maingallery/pic2.jpeg",
+                "size": "normal",
+                "idm": "grid_pic2"
+            },
+            {
+                "image": "/gallery/maingallery/pic2.jpeg",
+                "size": "wide",
+                "idm": "grid_pic3"
+            },
+            {
+                "image": "/gallery/maingallery/pic2.jpeg",
+                "size": "big",
+                "idm": "grid_pic4"
+            },
+            {
+                "image": "/gallery/maingallery/pic2.jpeg",
+                "size": "tall",
+                "idm": "grid_pic5"
+            },
+            {
+                "image": "/gallery/maingallery/robot2.png",
+                "size": "wide",
+                "idm": "grid_pic6"
+            }
+        ]
+    }
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+    <link rel="stylesheet" href="events.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="full-img" id="full-img-box" onclick="closefullimg()">
+        <img src="Aviation1.png" id="full-img">
+        <span>x</span>
+    </div>
+    <div class="full-details" id="full-details-box">
+        <div class="detailmain">
+            <div class="card c1" style="--i:-1;">
+                <div class="content" style="--j:1;">
+                    <h2>RC Plane Workshops</h2>
+                    <p>
+                        quaerat blanditiis eius ullam ipsam. Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Odit animi asperiores eius voluptates eos in minus,
+                        voluptatibus
+                        magni excepturi? Delectus quas cum laudantium iusto itaque numquam vitae
+                        repellendus
+                        vero optio eum omnis accusantium minus et natus fuga voluptatum saepe
+                        inventore
+                        temporibus, ratione eos illo! Aperiam ipsa ullam hic aliquam maiores?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ut,
+                        esse a
+                        perspiciatis rerum maiores. Id numquam ratione assumenda expedita
+
+                    </p>
+                </div>
+            </div>
+            <div class="imges c1">
+                <h2 style="color:#fff">Gallery</h2>
+                <img src="/wg1.jpeg">
+                <img src="/wg2.png">
+                <img src="/wg3.jpg">
+                <img src="/wg3.jpg">
+                <img src="/wg3.jpg">
+                <img src="/wg3.jpg">
+            </div>
+        </div>
+        <span onclick="closefulldetail()">x</span>
+    </div>
+    <div class="events">
+        <div class="head">Events</div>
+        <div class="upcoming">
+            <div class="p1"><%= currEvent.upcoming %></div>
+            <div class="p2">
+                <div style="font-size: 1em;"><%= currEvent.title %></div>
+                <div style="display: flex;width: 100%;">
+                    <div
+                        style="color: rgb(143, 143, 236); width: 50%;font-size: .7em;display: flex;align-items: center;">
+                        <i class='bx bxs-location-plus' style="font-size: 1.5em;"></i><%= currEvent.location %>
+                    </div>
+                    <div style="color: rgb(242, 97, 97); width: 50%;font-size: .7em;display: flex;align-items: center;">
+                        <i class='bx bx-time' style="font-size: 1.5em;"></i><%= currEvent.timeandDate %>
+                    </div>
+                </div>
+            </div>
+            <div class="p3"><img src="<%= currEvent.image %>" onclick="returnidevent(this.src)"></div>
+        </div>
+        <div class="main">
+            <% for(let event of eventdata){ %>
+                <div class="event">
+                    <div class="imge">
+                        <img src="<%= event.frontImage %>" onclick="returnidevent(this.src)">
+                    </div>
+                    <div class="info" style="padding-left: 5px;">
+                        <div class="heading">
+                            <%= event.heading %>
+                        </div>
+                        <div class="list">
+                            <ul>
+                                <% for(let point of event.list){ %>
+                                    <li>
+                                        <%= point.name %>
+                                    </li>
+                                    <% } %>
+                            </ul>
+                        </div>
+                        <div class="date">
+                            <i class='bx bxs-calendar'></i>
+                            <%= event.date %>
+                        </div>
+                        <div class="details" id="<%= event.details.id %>" onclick="returniddetail(this.id)">
+                            Details
+                            <div id="eventDetails1" style="display: none;">
+                                <div class="detailmain">
+                                    <div class="card c1" style="--i:-1;">
+                                        <div class="content" style="--j:1;">
+                                            <h2>
+                                                <%= event.details.detailHeading %>
+                                            </h2>
+                                            <p style="white-space: pre-line;text-align: left;">
+                                                <%= event.details.content %>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="imges c1">
+                                        <h2 style="color:#fff">Gallery</h2>
+                                        <% for(let imge of event.details.detailsimg) {%>
+                                            <img src="<%= imge.image %>" onclick="returnidevent(this.src)">
+                                            <% } %>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+        </div>
+    </div>
+    <script>
+        var fulldetailbox = document.getElementById("full-details-box");
+        var displaydetail = fulldetailbox.getElementsByTagName("div")[0];
+        function closefulldetail() {
+            fulldetailbox.style.display = "none";
+
+        }
+        function returnddetail(id) {
+            console.log(id);
+            var myDiv = document.getElementById(id);
+            var subdiv = myDiv.getElementsByTagName("div")[0];
+            var ssubdiv = subdiv.getElementsByTagName("div")[0];
+            var html = ssubdiv.innerHTML;
+            displaydetail.innerHTML = html;
+            fulldetailbox.style.display = "flex";
+        }
+        var fullimgbox = document.getElementById("full-img-box");
+        var fullimg = document.getElementById("full-img");
+        function returnidevent(pic) {
+            fullimgbox.style.display = "flex";
+            fullimg.src = pic;
+        }
+        function closefullimg() {
+            fullimgbox.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

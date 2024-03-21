@@ -1,0 +1,122 @@
+{
+    "team":{
+        "visionary":[
+            {
+                "image":"/team/visionaries/Ashish.png",
+                "name":"Ashish Murthy",
+                "desc":"The Revivor",
+                "backName":"Mr. Ashish",
+                "notion":"",
+                "linkedIn":""
+            },
+            {
+                "image":"/team/visionaries/Pratham.png",
+                "name":"Pratham",
+                "desc":"The Revivor",
+                "backName":"Mr. Pratham",
+                "notion":"",
+                "linkedIn":""
+            }
+        ],
+        "coordinators":[
+            {
+                "image":"/team/cords/jeevan.png",
+                "name":"Jeevan Gadde",
+                "desc":"Coordinator",
+                "backName":"Mr.Jeevan",
+                "notion":"Ponder, Tinker, Learn, Repeat. Having opportunity to lead a passionate team like RnA is truly rewarding.",
+                "linkedIn":"https://www.linkedin.com/in/jeevan-kumar-gadde/"
+            },
+            {
+                "image":"/team/cords/Agniprovo.png",
+                "name":"Agniprovo",
+                "desc":"Coordinator",
+                "backName":"Mr. Agniprovo",
+                "notion":"RnA is a club made for fulfilling the wish of many individuals of bringing boxes and wheels into life and automation . ",
+                "linkedIn":"https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav"
+            }
+        ],
+        "sub_coordinators":[
+            {
+                "image":"/team/subCords/Satyam.jpg",
+                "name":"Satyam Sahoo",
+                "desc":"Sub-Coordinator",
+                "backName":"Mr. Satyam",
+                "notion":"",
+                "linkedIn":"https://www.linkedin.com/in/satyam-sahoo-7b9786248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            },
+            {
+                "image":"/team/subCords/AdityaYadav.jpg",
+                "name":"Aditya Yadav",
+                "desc":"Sub-Coordinator",
+                "backName":"Mr. Knox",
+                "notion":"",
+                "linkedIn":"https://www.linkedin.com/in/aditya1a2yadav/"
+            },
+            {
+                "image":"/team/subCords/Ankit.png",
+                "name":"Ankit",
+                "desc":"Sub-Coordinator",
+                "backName":"Mr. Ankit",
+                "notion":"",
+                "linkedIn":"https://www.linkedin.com/in/ankit-singh-42731b250"
+            },
+            {
+                "image":"/team/subCords/Suchi.png",
+                "name":"Suchi",
+                "desc":"Sub-Coordinator",
+                "backName":"Ms. Suchi",
+                "notion":"Working on Vision - not only related to Computers ;)",
+                "linkedIn":"https://www.linkedin.com/in/shuchisaxena"
+            },
+            {
+                "image":"/team/subCords/Nalin.png",
+                "name":"Nalin",
+                "desc":"Sub-Coordinator",
+                "backName":"Mr. Nalin",
+                "notion":"Automation and changing world through technology",
+                "linkedIn":"https://www.linkedin.com/in/knalins?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            },
+            {
+                "image":"/team/subCords/Sabnoor.jpg",
+                "name":"Sabnoor",
+                "desc":"Sub-Coordinator",
+                "backName":"Ms. Sabnoor",
+                "notion":"Robotics is not about making machine to serve it's about creating machines that can be our partners.",
+                "linkedIn":"https://www.linkedin.com/in/sabnoor-fatima-4ab6a724b"
+            },
+            {
+                "image":"/team/subCords/Tanishk.png",
+                "name":"Tanishk",
+                "desc":"Sub-Coordinator",
+                "backName":"Mr. Tanishk",
+                "notion":"",
+                "linkedIn":"https://www.linkedin.com/in/tanishk-goyal"
+            },
+            {
+                "image":"/team/subCords/Rohit.png",
+                "name":"Rohit Kumar",
+                "desc":"Sub-Coordinator",
+                "backName":"Mr. Rohit",
+                "notion":"",
+                "linkedIn":"https://www.linkedin.com/in/rohit-kumar-119425262"
+            },
+            {
+                "image":"/team/subCords/Arpit.png",
+                "name":"Arpit",
+                "desc":"Member",
+                "backName":"Mr. Arpit",
+                "notion":"Encourage creativity and innovation by exploring new ideas and approaches to problem-solving.",
+                "linkedIn":"https://www.linkedin.com/in/arpit-maurya-198007256"
+            },
+            {
+                "image":"/team/subCords/Aditya.png",
+                "name":"Aditya Karan",
+                "desc":"Member",
+                "backName":"Mr. Aditya KK",
+                "notion":"",
+                "linkedIn":"https://www.linkedin.com/in/jeevan-kumar-gadde/"
+            }
+        ]
+    }
+}

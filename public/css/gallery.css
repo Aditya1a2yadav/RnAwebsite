@@ -1,0 +1,207 @@
+@font-face {
+    font-family: Beyonders;
+    src: url(/Beyonders.otf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(/Montserrat-SemiBold.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#gallery{
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
+.gallerys {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px 40px 5px;
+    width: 100%;
+    z-index: -10;
+    height: 100%;
+    padding:2px;
+}
+ .main-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+}
+.main-gallery::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: -10;
+}
+.main-gallery .header{
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 30px;
+    margin-bottom: 10px;
+    color: black;
+}
+.head-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    object-fit: contain;
+    justify-content: center;
+    /* max-height: 360px; */
+    width: 100%;
+    /* overflow: hidden; */
+    /* background-color: #fff; */
+    /* border-radius: 5px; */
+    /* box-shadow:inset 0px 0px 0px 10px rgba(45, 48, 39,.5); */
+    /* border: groove 10px rgba(45, 48, 39,.7); */
+    /* z-index: -1; */
+}
+/* .head-gallery:hover{
+    overflow-y: scroll;
+} */
+.head-gallery div h2{
+    font-family: Beyonders;
+    font-size: 12px;
+}
+.head-gallery div h3{
+    font-family: Montserrat;
+    font-size: 18px;
+}
+.head-gallery div{
+    /* position: relative; */
+    margin: 50px 25px;
+    margin-bottom: 10px;
+    display: flex;
+    object-fit: cover;
+    width: 305px;
+    height: 278px;
+    color: white;
+    background: url(/bg1.jpeg);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    border: 2px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+    /* transform: scale(.8); */
+    /* z-index:-1; */
+}
+/* .head-gallery div::before{
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 278px;
+    background-color: rgb(238, 201, 131);
+    transform-origin: bottom right;
+    transform: rotate(7deg);
+    border-radius: 3px;
+    z-index: -2;
+    transform:scale(.5);
+   
+} */
+.head-gallery img{
+    height: 200px;
+    width: 290px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 8px 3px rgb(37, 161, 3);
+}
+
+.grid-wraper div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.grid-wraper div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    /* z-index: -1; */
+}
+.grid-wraper{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+    max-height: 540px;
+    width: 100%;
+    margin: 40px;
+    overflow: hidden;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: inset 0px -50px 60px -0px rgb(21, 3, 3),0 4px 10px 3px gray;
+
+}
+.grid-wraper:hover{
+    transform: 3s;
+    overflow-y: scroll;
+}
+.grid-wraper .big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.grid-wraper .wide{
+    grid-column: span 2;
+}
+.grid-wraper .tall{
+    grid-row: span 2;
+}
+
+
+.full-img {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    perspective: 1000px;
+}
+
+.full-img img {
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    animation: panimate .5s linear;
+}
+
+.full-img span {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+}
+
+@keyframes panimate {
+    0% {
+        transform: scale(0) rotateY(0deg);
+    }
+
+    100% {
+        transform: scale(1) rotateY(360deg);
+    }
+}
+

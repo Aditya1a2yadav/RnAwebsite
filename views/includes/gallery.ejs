@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <div class="full-img" id="full-img-box" onclick="closefullimg()">
+        <img src="Aviation1.png" id="full-img">
+        <span>x</span>
+    </div>
+    <div class="gallerys">
+        <div class="main-gallery">
+            <div class="header" style="color: green;">&lt;/<font color="black">Gallery</font>&gt;</div>
+            <!-- <div style="background: url(stuffs/woodbg.jpg); padding: 10px;border-radius: 10px;"> -->
+                <div class="head-gallery">
+                    <% for(let imge of homedata.gallery.head_gallery){ %>
+                    <div id="<%= imge.id %>" onclick="returnid(this.id)">
+                        <img src="<%= imge.image %>" alt="<%= imge.alt %>" class="photo" >
+                        <h2><%= imge.heading %></h2>
+                        <h3><%= imge.date %></h3>
+                    </div>
+                    <% } %>
+                </div>
+            <!-- </div> -->
+            <div class="grid-wraper">
+                <% for(let imge of homedata.gallery.grid_wrapper){ %>
+                <div id="<%= imge.idm %>" class="<%= imge.size %>" onclick="returnid(this.id)">
+                    <img src="<%= imge.image %>" placeholder="image">
+                </div>
+                 <% } %>
+            </div>
+        </div>
+    </div>
+    <script>
+        var fullimgbox = document.getElementById("full-img-box");
+        var fullimg = document.getElementById("full-img");
+        function returnid(id) {
+            var myDiv = document.getElementById(id);
+            var myImg = myDiv.getElementsByTagName("img")[0];
+            var mySrc = myImg.src;
+            fullimgbox.style.display = "flex";
+            fullimg.src = mySrc;
+        }
+        function closefullimg() {
+            fullimgbox.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
