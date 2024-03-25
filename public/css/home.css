@@ -241,3 +241,18 @@ button:hover{
         font-size: .9em;
     } */
 }
+/* 
+@media(max-width: 530px) {
+    body{
+        transform: scale(0.5);
+        transform-origin: top left; /* Adjust as needed */
+        width: 200%; /* 100% / 0.7 */
+        height: 200%; /* Adjust height as needed to maintain aspect ratio */
+        /* overflow-x: hidden; Hide the horizontal scrollbar caused by scaling */
+    }
+} */
+
+html{
+    height: 100vh;
+    width: 100vw;
+}
