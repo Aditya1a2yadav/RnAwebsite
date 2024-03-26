@@ -187,10 +187,10 @@ h3 span{
 }
 @media(max-width: 530px) {
     body{
-        transform: scale(0.7);
+        transform: scale(0.5);
         transform-origin: top left; /* Adjust as needed */
-        width: 142.85%; /* 100% / 0.7 */
-        height: 142.85%; /* Adjust height as needed to maintain aspect ratio */
+        width: 200%;
+        height: 200%;
         overflow-x: hidden; /* Hide the horizontal scrollbar caused by scaling */
     }
 }
