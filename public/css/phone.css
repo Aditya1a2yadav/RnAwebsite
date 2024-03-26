@@ -43,7 +43,7 @@
     }
     #option .menu{
         position: fixed;
-        height: 100vh;
+        height: 100%;
         background: rgb(17 16 16 / 50%);
         box-shadow: 0 0 2px rgba(225,225,225,0.5);
         left: -200px;
