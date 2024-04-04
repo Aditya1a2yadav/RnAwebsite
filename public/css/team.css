@@ -188,16 +188,17 @@ h3 span{
 @media(max-width: 530px) {
     body{
         transform: scale(0.5);
-        transform-origin: top left; /* Adjust as needed */
+        transform-origin: top left; 
         width: 200%;
         height: 200%;
-        overflow-x: hidden; /* Hide the horizontal scrollbar caused by scaling */
+        overflow-x: hidden; 
     }
 }
 
 html, body {
     overflow-x: hidden;
     /* overflow-y: hidden; */
+    /* margin: 5px; */
 }
 html{
     height: 100vh;

@@ -7,15 +7,15 @@
                 "desc":"The Revivor",
                 "backName":"Mr. Ashish",
                 "notion":"",
-                "linkedIn":""
+                "linkedIn":"https://www.linkedin.com/in/ashish-murthy"
             },
             {
                 "image":"/team/visionaries/Pratham.png",
-                "name":"Pratham",
+                "name":"Pratham Choudhary",
                 "desc":"The Revivor",
                 "backName":"Mr. Pratham",
-                "notion":"",
-                "linkedIn":""
+                "notion":"It might not work the start, but try hard enough and eventually it will !",
+                "linkedIn":"https://www.linkedin.com/in/pratham-choudhary-871000129/"
             }
         ],
         "coordinators":[
@@ -100,6 +100,14 @@
                 "backName":"Mr. Rohit",
                 "notion":"",
                 "linkedIn":"https://www.linkedin.com/in/rohit-kumar-119425262"
+            },
+            {
+                "image":"/team/subCords/Laxmi.jpg",
+                "name":"Laxmi Kumari",
+                "desc":"Sub-Coordinator",
+                "backName":"Ms. Laxmi",
+                "notion":"",
+                "linkedIn":"https://www.linkedin.com/in/laxmi-kumari-97522426b/"
             },
             {
                 "image":"/team/subCords/Arpit.png",

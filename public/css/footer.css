@@ -70,6 +70,7 @@ html{
 
 .footer-box .social img:hover {
     width: 25px;
+    transition: .3s;
 }
 
 .lowest-f {

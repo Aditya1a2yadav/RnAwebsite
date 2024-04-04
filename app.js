@@ -24,6 +24,9 @@ app.get("/team",(req,res)=>{
     const teamdata=data.team;
     res.render("team.ejs",{teamdata}); 
 });
+app.get("/aboutUs",(req,res)=>{
+    res.render("aboutUs.ejs"); 
+});
 
 app.listen(port,()=>{
     console.log(`Server is listening on ${port}`);
